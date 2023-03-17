@@ -6,6 +6,7 @@
 
 body{
   font-family: monospace;
+  overflow-x: hidden;
 }
 
 :root {
@@ -16,4 +17,19 @@ body{
   --lightGrayColor: #979797;
   --midGrayColor: #878787;
   --darkGrayColor: #5b5b5b;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
