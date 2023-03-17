@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: monospace;
+}
+
+:root {
+  --primaryBtnBackground: #7b61ff;
+  --secondaryBtnBackground: #f6f4ff;
+  --secondaryBtnColor: #5243c2;
+  --darkColor: #161414;
+  --lightGrayColor: #979797;
+  --midGrayColor: #878787;
+  --darkGrayColor: #5b5b5b;
+}
