@@ -6,19 +6,17 @@ import { Typography } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Container, display } from '@mui/system';
 import Grid from '@mui/material/Grid';
+import { Stack} from "@mui/material";
 
 
 const Category = () => {
   const breakPoint = useMediaQuery("(min-width:600px)");
 
   return (
-    <Box width="80%" margin="80px auto"
+    <Box width="80%" margin="auto"
 
     >
-
-
-
-         <Typography variant="h3" textAlign="center">
+      <Typography variant="h3" textAlign="center">
         Categories
       </Typography>
       <Tabs
@@ -41,15 +39,15 @@ const Category = () => {
         <Box
         sx={{
           flexGrow: 1,
-          padding: 3,
+
         }}
         >
-           <Grid container spacing={ 4} columns={{ xs: 4, sm: 8, md: 12 }}>
+           <Stack direction={'row'} flexWrap="wrap" justifyContent="center"  gap={2}>
         {Array.from(Array(6)).map((_, index) => (
-          <Grid item xs={2} sm={4} md={4} key={index} >
+          <Grid item key={index} >
 
 <Box
-        sx={{ width: { xs: '100%', sm: '258px', md: "220px", }, boxShadow: "none", borderRadius: 0 }}
+        sx={{ width: { xs: '100%', sm: '458px', md: "420px", }, boxShadow: "none", borderRadius: 0, margin: "auto" }}
       >
 
 <img
@@ -67,7 +65,7 @@ const Category = () => {
       </Box>
           </Grid>
         ))}
-      </Grid>
+      </Stack>
 
 
         </Box>

@@ -9,19 +9,15 @@ const Feature = () => {
     disableGutters
     maxWidth="xl"
     sx={{
-      px: {
-        xs: 2,
-        sm: 5,
-        md: 10,
-      },
-      my: 15,
+
+      my: 5
     }}
   >
       <Typography
         sx={{
           fontFamily: "Poppins",
           fontWeight: "600",
-          fontSize: "32px",
+          fontSize: "62px",
           color: "#161414",
           mb: 8,
           textAlign: {
@@ -39,7 +35,7 @@ const Feature = () => {
           maxWidth: "80%",
           margin: "auto",
           padding: 3,
-          overflow: "scroll",
+          overflow: "auto",
           flexDirection: {
             xs: "column",
             md: "row",
@@ -55,6 +51,7 @@ const Feature = () => {
           },
         }}
       >
+        `disableEqualOverflow`
         <Features />
         <Features />
 
