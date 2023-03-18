@@ -51,7 +51,6 @@ const Feature = () => {
           },
         }}
       >
-        `disableEqualOverflow`
         <Features />
         <Features />
 
