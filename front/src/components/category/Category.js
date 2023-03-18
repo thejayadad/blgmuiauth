@@ -12,20 +12,12 @@ const Category = () => {
   const breakPoint = useMediaQuery("(min-width:600px)");
 
   return (
-    <Container
-    disableGutters
-    maxWidth="xl"
-    sx={{
-      height: "70vh",
-      px: {
-        xs: 2,
-        sm: 5,
-        md: 10,
-      },
-      my: 15,
-    }}
+    <Box width="80%" margin="80px auto"
+
     >
-      <Box width="80%" margin="80px auto">
+
+
+
          <Typography variant="h3" textAlign="center">
         Categories
       </Typography>
@@ -49,14 +41,30 @@ const Category = () => {
         <Box
         sx={{
           flexGrow: 1,
-          background: "#222",
-          padding: 2
+          padding: 3,
         }}
         >
-           <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+           <Grid container spacing={ 4} columns={{ xs: 4, sm: 8, md: 12 }}>
         {Array.from(Array(6)).map((_, index) => (
-          <Grid item xs={2} sm={4} md={4} key={index}>
-            box item
+          <Grid item xs={2} sm={4} md={4} key={index} >
+
+<Box
+        sx={{ width: { xs: '100%', sm: '258px', md: "220px", }, boxShadow: "none", borderRadius: 0 }}
+      >
+
+<img
+          src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+          style={{
+            width: "100%",
+            objectFit: "cover",
+            cursor: "pointer",
+          }}
+        />
+        <Typography>
+            Blog Title
+        </Typography>
+      </Box>
           </Grid>
         ))}
       </Grid>
@@ -66,7 +74,6 @@ const Category = () => {
 
 
     </Box>
-    </Container>
   )
 }
 

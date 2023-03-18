@@ -9,7 +9,6 @@ const Feature = () => {
     disableGutters
     maxWidth="xl"
     sx={{
-      height: "90vh",
       px: {
         xs: 2,
         sm: 5,
@@ -37,7 +36,7 @@ const Feature = () => {
         sx={{
           background: "orange",
           display: "flex",
-          maxWidth: "60vw",
+          maxWidth: "80%",
           margin: "auto",
           padding: 3,
           overflow: "scroll",
